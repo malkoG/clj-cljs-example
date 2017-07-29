@@ -1,6 +1,5 @@
-CREATE SEQUENCE guestbook_id;
 CREATE TABLE guestbook
-(id INTEGER PRIMARY KEY NOT NULL DEFAULT nextval("guestbook_id"),
+(id SERIAL PRIMARY KEY,
 name VARCHAR(30),
 message VARCHAR(200),
 timestamp TIMESTAMP);
